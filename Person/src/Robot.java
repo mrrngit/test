@@ -1,8 +1,6 @@
 
-public class Person{
-public String name = null;
-public int age = 0;
-
+public class Robot {
+public String name=null;
 public void talk(){
 	System.out.println(this.name+"が話す");
 }
