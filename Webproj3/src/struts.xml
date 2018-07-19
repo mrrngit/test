@@ -12,7 +12,7 @@
 <result name="error">helloStrutsError.jsp</result>
 </action>
 
-<action name="WelcomeAcion" class="com.internousdev.webproj3.action.WelcomeAction" method="execute">
+<action name="WelcomeAction" class="com.internousdev.webproj3.action.WelcomeAction" method="execute">
 <result name="success">welcome.jsp</result>
 </action>
 
@@ -21,7 +21,7 @@
 <result name="error">loginError.jsp</result>
 </action>
 
-<action name="InquiryAction" class="com.internousdev.webproj3.action.InquiryAction" method="execute"> 
+<action name="InquiryAction" class="com.internousdev.webproj3.action.InquiryAction" method="execute">
 <result name="success">inquiry.jsp</result>
 </action>
 
@@ -29,7 +29,7 @@
 <result name="success">inquiryComplete.jsp</result>
 </action>
 
-<action name="TestAction" class="com.internousdev.webproj3.action.TestAction" method="execute"> 
+<action name="TestAction" class="com.internousdev.webproj3.action.TestAction" method="execute">
 <result name="success">test.jsp</result>
 </action>
 </package>
