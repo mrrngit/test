@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC
 "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
@@ -13,4 +14,21 @@ method="execute">
 <result name="error">helloStrutsError.jsp</result>
 </action>
 </package>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts.devMode" value="true"/>
+<package name="Com.internousdev.webproj5.ation" extends="struts-default">
+
+<action name="HelloStrutsAction" class="Com.internousdev.webproj5.action.HelloStrutsAction"
+method="execute">
+<result name="success">hello.jsp</result>
+<result name="error">helloStrutsError.jsp</result>
+</action>
+</package>
+>>>>>>> 1da2be3304147ec2c97f0a1de337fad9d6ec13ce
 </struts>
