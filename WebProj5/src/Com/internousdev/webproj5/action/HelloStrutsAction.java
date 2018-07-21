@@ -1,11 +1,11 @@
-package com.internousdev.webproj5.action;
+package Com.internousdev.webproj5.action;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
-import com.internousdev.webproj5.dao.HelloStrutsDAO;
-import com.internousdev.webproj5.dto.HelloStrutsDTO;
+import Com.internousdev.webproj5.dao.HelloStrutsDAO;
+import Com.internousdev.webproj5.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class HelloStrutsAction extends ActionSupport implements SessionAware{
