@@ -40,7 +40,7 @@ table{
 }
 
 #header{
-	width:100W%;
+	width:100%;
 	height:80px;
 	background-color:black;
 }
@@ -66,7 +66,7 @@ table{
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>Home</p>
@@ -77,7 +77,7 @@ table{
 			</s:form>
 		</div>
 	</div>
-	
+
 	<div id="footer">
 		<div id="pr">
 		</div>

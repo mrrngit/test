@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="imagetoolbar" content="no" />
@@ -29,13 +29,13 @@ body{
 }
 
 table{
-	text-align:center;	
+	text-align:center;
 	margin:0 auto;
 }
 /* ========ID LAYOUT======== */
 
 #top{
-	width:780ox;
+	width:780px;
 	margin:30px auto;
 	border:1px solid #333;
 }
@@ -67,12 +67,12 @@ table{
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>BuyItem</p>
 		</div>
-		
+
 		<div>
 		<s:form action="BuyItemAction">
 		<table>
@@ -80,31 +80,31 @@ table{
 				<td>
 					<span>商品名</span>
 				</td>
-				
+
 				<td>
 					<s:property value="session.buyItem_name"/>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<td>
 					<span>値段</span>
 				</td>
-				
+
 				<td>
 				<s:property value="session.buyItem_price"/>
 					<span>円</span>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<td>
 					<span>在庫</span>
 				</td>
-				
+
 				<td>
 					<select name="stock">
-					<option vakue="1" selected="selected">1</option>
+					<option value="1" selected="selected">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
@@ -112,18 +112,18 @@ table{
 					</select>
 				</td>
 			</tr>
-			
+
 			<tr>
 				<td>
 					<span>支払い方法</span>
 				</td>
-				
+
 				<td>
 					<input type="radio" name="pay" value="1" checked="checked">現金払い
 					<input type="radio" name="pay" value="2">クレジットカード
 				</td>
 			</tr>
-			
+
 			<tr>
 				<td>
 					<s:submit value="購入"/>
@@ -131,7 +131,7 @@ table{
 			</tr>
 		</table>
 	</s:form>
-	
+
 		<div>
 			<span>前画面に戻る場合は</span>
 			<a href='<s:url action="HomeAction"/>'>こちら</a>

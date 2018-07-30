@@ -66,16 +66,16 @@ clear:both;
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>UserCreateComplete</p>
 		</div>
-		
+
 		<div>
 			<h3>ユーザーの登録が完了致しました。</h3>
 		<div>
-			<a href='<s:uri action="HomeAction"/>'>ログインへ</a>
+			<a href='<s:url action="HomeAction"/>'>ログインへ</a>
 		</div>
 	</div>
 	</div>

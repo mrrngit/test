@@ -11,12 +11,12 @@
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	
+
 	<title>Login画面</title>
-	
+
 	<style type="text/css">
 	/* ========TAG LAYOUT======== */
-	
+
 body{
 	margin:0;
 	padding:0;
@@ -55,10 +55,10 @@ table{
 #footer{
 	width:100%;
 	height:80px;
-	background_color:black;
+	background-color:black;
 	clear:both;
 }
-	
+
 	</style>
 
 </head>
@@ -68,12 +68,12 @@ table{
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>Login</p>
 		</div>
-		
+
 		<div>
 			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
@@ -82,7 +82,7 @@ table{
 				<s:submit value="ログイン"/>
 			</s:form>
 			<br/>
-			
+
 			<div>
 				<span>新規ユーザー登録は
 					<a href='<s:url action="UserCreateAction"/>'>こちら</a>
@@ -90,7 +90,7 @@ table{
 			</div>
 		</div>
 	  </div>
-		
+
 		<div id="footer">
 			<div id="pr">
 			</div>
