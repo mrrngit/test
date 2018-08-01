@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<<%@ taglib prefix="s" uri="/struts-tags"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 
 <!DOCTYPE html>
 <html>
@@ -66,12 +66,12 @@ clear:both;
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>MyPage</p>
 		</div>
-		
+
 		<div>
 			<s:if test="session.message == ''">
 				<h3>ご購入情報は以下になります。</h3>
@@ -80,7 +80,7 @@ clear:both;
 						<td>商品名</td>
 						<td><s:property value="session.buyItem_name" /></td>
 					</tr>
-				
+
 					<tr>
 						<td>値段</td>
 						<td>
@@ -88,7 +88,7 @@ clear:both;
 							<span>円</span>
 						</td>
 					</tr>
-					
+
 					<tr>
 						<td>購入個数</td>
 						<td>
@@ -96,7 +96,7 @@ clear:both;
 						<span>個</span>
 						</td>
 					</tr>
-					
+
 					<tr>
 						<td>支払い方法</td>
 						<td><s:property value="session.total_payment" /></td>
@@ -110,7 +110,7 @@ clear:both;
 			<s:if test="session.message != null">
 				<h3><s:property value="session.message"/></h3>
 			</s:if>
-			
+
 			<div>
             	<br>
 				<span>前画面に戻る場合は</span>
@@ -119,10 +119,10 @@ clear:both;
 				</div>
 		</div>
 	</div>
-	
+
 	<div id="footer">
 		<div id="pr">
 		</div>
-	</div>	
+	</div>
 </body>
 </html>
