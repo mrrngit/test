@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript" /> <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <title>BuyItemConfirm画面</title>
 
 <style type="text/css">
@@ -20,32 +20,32 @@ body {
 	padding:0;
 	line-height:1.6;
 	letter-spacing:1px;
-	font-family:Verdana, Helvetica, sans-serif; 
+	font-family:Verdana, Helvetica, sans-serif;
 	font-size:12px;
 	color:#333;
 	background:#fff;
 }
-	
+
 table {
 	text-align:center;
-	margin:0 auto; 
+	margin:0 auto;
 }
 
 /* ========ID LAYOUT======== */
-#top { 
-	width:780px; 
+#top {
+	width:780px;
 	margin:30px auto;
 	border:1px solid #333;
 }
 
-#header { 
-	width: 100%; 
+#header {
+	width: 100%;
 	height: 80px;
 	background-color: black;
 }
 
 #main {
-	width: 100%; 
+	width: 100%;
 	height: 500px;
 	text-align:center;
 }
@@ -59,7 +59,7 @@ table {
 </style>
 
 <script type="text/javascript">
-	function submitAction(url) { 
+	function submitAction(url) {
 		$('form').attr('action', url);
 		$('form').submit();
 	}
@@ -71,13 +71,14 @@ table {
 		<div id="pr">
 		</div>
 	</div>
-	
+
 	<div id="main">
 		<div id="top">
 			<p>BuyItem</p>
 		</div>
 		<div>
-			<s:form>
+			<s:form action="BuyItemConfirmAction">
+			<table>
 			<tr>
 				<td>商品名</td>
 				<td><s:property value="session.buyItem_name"/></td>
@@ -101,10 +102,11 @@ table {
 				<td><input type="button" value="戻る" onclick="submitAction('HomeAction')" /></td>
 				<td><input type="button" value="完了" onclick="submitAction('BuyItemConfirmAction')" /></td>
 			</tr>
+			</table>
 		</s:form>
 		</div>
 	</div>
-	
+
 	<div id="footer">
 		<div id="pr">
 		</div>

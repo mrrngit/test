@@ -18,7 +18,7 @@
 
 body{
 	margin:0;
-	padding0;
+	padding:0;
 	line-height:1.6;
 	letter-spacing:1px;
 	font-family:Verdana,Helvetica,sans-serif;

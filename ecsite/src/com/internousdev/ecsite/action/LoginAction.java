@@ -12,13 +12,17 @@ import com.opensymphony.xwork2.ActionSupport;
 public class LoginAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
-	public Map<String, Object> session;
-	private LoginDAO loginDAO = new LoginDAO();
-	private LoginDTO loginDTO = new LoginDTO();
-	private BuyItemDAO buyItemDAO = new BuyItemDAO();
+	private String result;
+	private Map<String, Object> session;
+
 
 	public String execute(){
-		String result = ERROR;
+		LoginDAO loginDAO = new LoginDAO();
+		LoginDTO loginDTO = new LoginDTO();
+		BuyItemDAO buyItemDAO = new BuyItemDAO();
+
+
+	    result = ERROR;
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
 		session.put("loginUser", loginDTO);
 
@@ -48,6 +52,10 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	}
 	public void setLoginPassword(String loginPassword){
 		this.loginPassword = loginPassword;
+	}
+
+	public Map<String,Object>getSession(){
+		return session;
 	}
 
 	@Override

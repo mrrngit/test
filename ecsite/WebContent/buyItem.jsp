@@ -80,7 +80,8 @@ table{
 						<span>商品名</span>
 					</td>
 					<td>
-						<s:property value="session.buyItem_name"/><br>
+						<s:property value="session.buyItem_name"/>
+						<br>
 					</td>
 				</tr>
 				<tr>
