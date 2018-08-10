@@ -89,6 +89,13 @@ table{
 				<p>Homeへ戻る場合は
 					<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 			</div>
+
+			<h3>管理者用ログイン</h3>
+			<s:form action="ManagerLoginAction">
+				<s:textfield name="loginUserId"/>
+				<s:password name="loginPassword"/>
+				<s:submit value="ログイン"/>
+			</s:form>
 		</div>
 	</div>
 
