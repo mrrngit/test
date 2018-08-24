@@ -2,16 +2,16 @@ package com.internousdev.ecsite.dto;
 
 public class ManagerLoginDTO {
 
-	private String loginId;
-	private String loginPassword;
 	private String userName;
+	private String loginPassword;
 	private boolean loginFlg = false;
 
-	public String getLoginId(){
-		return loginId;
+
+	public String getUserName(){
+		return userName;
 	}
-	public void setLoginId(String loginId){
-		this.loginId = loginId;
+	public void setUserName(String userName){
+		this.userName = userName;
 	}
 
 	public String getLoginPassword(){
@@ -19,13 +19,6 @@ public class ManagerLoginDTO {
 	}
 	public void setLoginPassword(String loginPassword){
 		this.loginPassword = loginPassword;
-	}
-
-	public String getUserName(){
-		return userName;
-	}
-	public void setUserName(String userName){
-		this.userName = userName;
 	}
 
 	public boolean getLoginFlg(){

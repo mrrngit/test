@@ -16,6 +16,16 @@ create table login_user_transaction(
 	updated_date datetime
 );
 
+create table login_manager_transaction(
+	id int not null primary key auto_increment,
+	user_name varchar(255),
+	login_pass varchar(255)
+);
+
+insert into login_manager_transaction(user_name, login_pass) values
+	("arakawa","123"),
+	("test","test");
+
 drop table if exists item_info_transaction;
 
 create table item_info_transaction(
