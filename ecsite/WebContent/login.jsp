@@ -92,8 +92,8 @@ table{
 
 			<h3>管理者用ログイン</h3>
 			<s:form action="ManagerLoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
+				<s:textfield name="loginManagerId"/>
+				<s:password name="loginManagerPassword"/>
 				<s:submit value="ログイン"/>
 			</s:form>
 		</div>

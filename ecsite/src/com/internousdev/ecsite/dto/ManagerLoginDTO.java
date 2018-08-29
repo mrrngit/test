@@ -1,24 +1,30 @@
 package com.internousdev.ecsite.dto;
 
 public class ManagerLoginDTO {
-
-	private String userName;
-	private String loginPassword;
+	private String managerloginId;
+	private String managerloginPassword;
+	private String managerName;
 	private boolean loginFlg = false;
 
+	public String getManagerLoginId(){
+		return managerloginId;
+	}
+	public void setManagerLoginId(String managerloginId){
+		this.managerloginId = managerloginId;
+	}
 
-	public String getUserName(){
-		return userName;
+	public String getManagerLoginPassword(){
+		return managerloginPassword;
 	}
-	public void setUserName(String userName){
-		this.userName = userName;
+	public void setManagerLoginPassword(String managerloginPassword){
+		this.managerloginPassword = managerloginPassword;
 	}
 
-	public String getLoginPassword(){
-		return loginPassword;
+	public String getManagerName(){
+		return managerName;
 	}
-	public void setLoginPassword(String loginPassword){
-		this.loginPassword = loginPassword;
+	public void setManagerName(String managerName){
+		this.managerName = managerName;
 	}
 
 	public boolean getLoginFlg(){
@@ -27,5 +33,4 @@ public class ManagerLoginDTO {
 	public void setLoginFlg(boolean loginFlg){
 		this.loginFlg = loginFlg;
 	}
-
 }

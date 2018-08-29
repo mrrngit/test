@@ -13,25 +13,26 @@ public class ManagerLoginDAO {
 		private Connection connection = dbConnector.getConnection();
 		private ManagerLoginDTO managerloginDTO= new ManagerLoginDTO();
 
-		public ManagerLoginDTO getLoginUserInfo(String loginName,String loginPassword){
+		public ManagerLoginDTO getLoginManagerInfo(String loginManagerId,String loginManagerPassword){
 
-		String sql = "SELECT * FROM login_manager_transaction where user_name =? AND login_pass =?";
+		String sql = "SELECT * FROM login_manager_transaction where manager_login_id =? AND manager_login_pass =?";
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-			preparedStatement.setString(1, loginName);
-			preparedStatement.setString(2, loginPassword);
+			preparedStatement.setString(1, loginManagerId);
+			preparedStatement.setString(2, loginManagerPassword);
 
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			if(resultSet.next()){
 
-				managerloginDTO.setUserName(resultSet.getString("user_name"));
-				managerloginDTO.setLoginPassword(resultSet.getString("login_pass"));
+				managerloginDTO.setManagerLoginId(resultSet.getString("manager_login_id"));
+				managerloginDTO.setManagerLoginPassword(resultSet.getString("manager_login_pass"));
+				managerloginDTO.setManagerName(resultSet.getString("manager_name"));
 
 
-				if(!(resultSet.getString("login_id").equals(null))){
+				if(!(resultSet.getString("manager_login_id").equals(null))){
 					managerloginDTO.setLoginFlg(true);
 				}
 

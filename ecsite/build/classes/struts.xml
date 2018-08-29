@@ -19,6 +19,13 @@
 			<result name="success">buyItem.jsp</result>
 		</action>
 
+		<!-- ManagerLoginAction -->
+		<action name="ManagerLoginAction" class="com.internousdev.ecsite.action.ManagerLoginAction" method="execute">
+			<result name="success">buyItem.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+
+
 		<!-- LoginAction -->
 		<action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction" method="execute">
 			<result name="success">buyItem.jsp</result>
@@ -64,6 +71,7 @@
 		<action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction" method="execute">
 			<result name="success">home.jsp</result>
 		</action>
+
 
 	</package>
 </struts>

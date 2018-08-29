@@ -18,13 +18,16 @@ create table login_user_transaction(
 
 create table login_manager_transaction(
 	id int not null primary key auto_increment,
-	user_name varchar(255),
-	login_pass varchar(255)
+	manager_login_id varchar(16) unique,
+	manager_login_pass varchar(16),
+	manager_name varchar(50),
+	insert_date datetime,
+	updated_date datetime
 );
 
-insert into login_manager_transaction(user_name, login_pass) values
-	("arakawa","123"),
-	("test","test");
+insert into login_manager_transaction(manager_login_id, manager_login_pass,manager_name) values
+	("aaa","123","arakawa"),
+	("bbb","456","tanaka");
 
 drop table if exists item_info_transaction;
 
